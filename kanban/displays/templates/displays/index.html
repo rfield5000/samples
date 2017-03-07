@@ -1,0 +1,16 @@
+{{HTML_DEF|safe}}
+<html>
+  <body>
+    <h1>HELLO</h1>
+    {% if USERS %}
+    <ul>
+      {% for one_user in USERS %}
+      <li>{{one_user|escape}}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No users present</p>
+    {% endif %}
+  </body>
+</html>
+

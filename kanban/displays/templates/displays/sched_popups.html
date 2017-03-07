@@ -1,0 +1,28 @@
+<!-- STRIP These are the two popups that appear on the schedule page -- add others as needed -->
+      <div id="item_popup" class="ui_popup">
+	<h3 class="popup_header">{{ APPNAME }} Set Item State</h3>
+	<span id="item_text"></span>
+	<br>
+	<span id="item_state">
+	  <br>
+	  <select id="popup_select">
+	    <option>NEW</option>
+	    <option selected>IN PROGRESS</option>
+	    <option>DONE</option>
+	    <option>CLOSE</option>
+	  </select>
+	  <br>
+	  <span id="popup_save" class="popup_button">SAVE</span>
+	  <br>
+	  <br>
+	  <span id="popup_cancel" class="popup_button">CANCEL</span>
+	  <br>
+	  <span id="popup_announce" class="popup_announce">ANNOUNCEMENTS HERE</span>
+	</span>
+      </div>
+      <div id="add_popup" class="ui_popup">
+	<h3 class="popup_header">{{ APPNAME }} Add a task</h3>
+	<p><textarea name="new_item_text" rows="4" columns="20"></textarea></p>
+	<span id="done" class="add_finish popup_button">SAVE</p>
+	<span id="cancel" class="add_finish popup_button">CANCEL</p>
+      </div>

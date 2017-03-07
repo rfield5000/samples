@@ -1,0 +1,23 @@
+{{HTML_DEF|safe}}
+<html>
+  <head>
+    <title>{{HTML_TITLE|safe}}</title>
+    {{STYLES_CSS_SCRIPTS|safe}}
+  </head>
+  <body class="kanban_body">
+    <div id="please_wait_main">
+      Loading, please wait.
+    </div>
+    <div id="problem_loading_main">
+      A problem was encountered loading this page.  Please try again later.
+    </div>
+    <div id="main_part">
+      <div id="loading_text">
+	<h1>LOADING . . .</h1>
+      </div>
+      {% include "sched_popups.html" %}
+      {% include "sched_main.html" %}
+    </div>
+  </body>
+</html>
+

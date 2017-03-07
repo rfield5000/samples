@@ -1,0 +1,23 @@
+{{HTML_DEF|safe}}
+<html>
+  <body>
+    <h1>THIS IS THE HOME OF RCFKanban</h1>
+    {% if SHOW_LOGIN %}
+    <h2>LOGIN</h2>
+    <a href="{{LOGIN_URL}}">Login Page</a>
+    {% endif %}
+    {% if SHOW_USER %}
+    <h2>WELCOME</h2>
+    <h3>{{USER_NAME}}</h3>
+    {% if LOGOUT_URL %}
+    <br>
+    <a href="{{LOGOUT_URL}}">Logout</a>
+    {% endif %}
+    {% endif %}
+    <h2>ADMIN</h2>
+    <h2>DISPLAY</h2>
+    <a href="{{DISPLAY_URL}}">Schedule Page</a>
+    
+  </body>
+</html>
+

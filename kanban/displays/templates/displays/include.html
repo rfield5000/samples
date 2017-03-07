@@ -1,0 +1,11 @@
+{{HTML_DEF|safe}}
+<html>
+  <body>
+    <h1>DISPLAY SAMPLE</h1>
+    <h2>{{ FIRST }} {{ INCLUDED }}</h2>
+    {% include "sub_one.html" %}
+    {% block some_text %}<p>THIS IS THE INITIAL BLOCK TEXT{% endblock %}
+    {% block some_text_two %}THIS IS THE OLD TEXT TO BE REPLACED{% endblock %}
+  </body>
+</html>
+

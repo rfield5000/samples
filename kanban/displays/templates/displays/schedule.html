@@ -1,0 +1,68 @@
+{{HTML_DEF|safe}}
+<html>
+  <head>
+    <title>{{HTML_TITLE|safe}}</title>
+    {{STYLES_CSS_SCRIPTS|safe}}
+  </head>
+  <body class="kanban_body">
+    <div id="please_wait_main">
+      Loading, please wait.
+    </div>
+    <div id="problem_loading_main">
+      A problem was encountered loading this page.  Please try again later.
+    </div>
+    <div id="main_part">
+      <p>MAIN PART</p>
+      <div id="loading_text">
+	<h1>LOADING . . .</h1>
+      </div>
+      <div id="item_popup" class="ui_popup">
+	<h3>Set Item State</h3>
+	<span id="item_text"></span>
+	<br>
+	<span id="item_state">
+	  <br>
+	  <select id="popup_select">
+	    <option>NEW</option>
+	    <option selected>IN PROGRESS</option>
+	    <option>DONE</option>
+	    <option>CLOSE</option>
+	  </select>
+	  <br>
+	  <span id="popup_save" class="popup_button">SAVE</span>
+	  <br>
+	  <br>
+	  <span id="popup_cancel" class="popup_button">CANCEL</span>
+	  <br>
+	  <span id="popup_announce" class="popup_announce">ANNOUNCEMENTS HERE</span>
+	</span>
+      </div>
+      <div id="add_popup" class="ui_popup">
+	<h3>Add popup here</h3>
+	<p><textarea name="new_item_text" rows="4" columns="20"></textarea></p>
+	<span id="done" class="add_finish popup_button">SAVE</p>
+	<span id="cancel" class="add_finish popup_button">CANCEL</p>
+      </div>
+      <div id="main_text">
+	<div id="logo_area">
+	  <img style="float:left;" src="/static/random-small.png" alt="Pretty city">
+	</div>
+	<div id="banner_area">
+	  <h1>{{APPNAME}}</h1>
+	</div>
+	<div>
+	  <div id="general_info">
+	    <h2 id="timestamp">{{TIMESTAMP}}</h2>
+	    <p>{{LOGIN}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="/">HOME</a></strong></p>
+	  </div>
+	  <p><strong id="add_new_task" class="user_selection">ADD NEW TASK</strong></p>
+	  <br>
+	  <div id="notes_table">
+	    {{TABLE_TEXT|safe}}
+	  </div>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>
+

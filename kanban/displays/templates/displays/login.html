@@ -1,0 +1,18 @@
+{{HTML_DEF|safe}}
+<html>
+  <head>
+    <title>{{HTML_TITLE|safe}}</title>
+    {{STYLES_AND_CSS}}
+  </head>
+  <body>
+    <h1>PLEASE LOG IN</h1>
+    {% if ERROR_TEXT %}
+    <h2>ALERT:</h2>
+    <h3>{{ ERROR_TEXT }}</h3>
+    {% endif %}
+    <form method="get">
+      {{ FORM.as_p }}
+      <INPUT type="submit" value="LOGIN">
+    </form>
+  </body>
+</html>

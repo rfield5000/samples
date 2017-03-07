@@ -1,0 +1,25 @@
+<!-- STRIP main section of the schedule page, holds the tables -->
+      <div id="main_text">
+	<div>
+	  <div style="float:left;" id="banner_area">
+	    <h1>{{APPNAME}}</h1>
+	  </div>
+	  <div id="logo_area">
+	    <img src="/static/random-small.png" alt="Pretty city">
+	  </div>
+	</div>
+	<div >
+	  <div id="general_info">
+	    <h2 id="timestamp">{{TIMESTAMP}}</h2>
+	    <p>{{LOGIN}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="/">HOME</a></strong></p>
+	  </div>
+	  {% if IS_LOGGED_IN %}
+	  <p><strong id="add_new_task" class="user_selection">ADD NEW TASK</strong></p>
+	  {% endif %}
+	  <br>
+	  <div id="notes_table">
+	    {{TABLE_TEXT|safe}}
+	  </div>
+	</div>
+      </div>
+
